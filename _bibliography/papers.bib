@@ -1,14 +1,23 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@article{fidedroid,
+  title = {Enhancing Fidelity of Description in Android Apps With Category-Based Common Permissions},
+  author = {Zhiqiang Wu and Xin Chen and Muhammad Umair Khan and Scott Uk-Jin Lee},
+  abstract={Application description analysis is applied for various purposes in software engineering domains. Besides the inherent challenges from the ambiguity of natural language, sparse permission semantics raise the difficulties of predicting functionalities and permission usages from app descriptions. More specifically, the functionalities common to the app’s category are intentionally abbreviated by developers due to the limited number of characters, and the permissions are often over-claimed. These are the main reasons that cause false positives in predicting permissions from app descriptions. Such unmentioned permissions can only be detected as suspicious in previous studies where effective assistance for developers in refining app descriptions and preventing potential security risks is not provided. In this paper, we propose the FideDroid, a framework to identify category-based common permissions to offset those essential functionalities while assessing the fidelity of app descriptions. Our framework augments the labeled dataset of app descriptions to improve the prediction of permissions. FideDroid compares inferred permissions with used ones to reveal the suspicious and unnecessary permissions based on the prediction. It helps developers to refine app descriptions and maintain permission usages. In our experiments on large real-world apps, we analyzed and revealed that the category-based common permissions may cover more unmentioned functionalities without considering all possible permissions during app description analysis. In addition, we discovered three factors causing the inconsistency between descriptions and permission usages to be: 1) human interventions in writing description; 2) bad practices on permission usages; and 3) prolific developers. These findings will facilitate developers to refine app descriptions and optimize permission usages in the apps.},
+  journal={IEEE ACCESS},
+  year={2021},
+  html = {https://ieeexplore.ieee.org/document/9496656}
+  
+}
+
 @article{description1,
   title={FCDP: Fidelity Calculation of Description-to-Permissions in Android Apps},
   author={Zhiqiang Wu and Xin Chen and Scott Uk-Jin Lee},
   abstract={Mobile app descriptions have been widely used in app markets to deliver various types of information to end-users. Even though this information may implicitly expose the dangerous permissions that allow access to sensitive data, most users cannot correctly identify and interpret the corresponding textual sentences owing to insufficient knowledge regarding Android permissions and the semantics of app descriptions. It is therefore important to assist users in understanding whether an app description accurately reflects whether the app may request dangerous permissions. To this end, we propose an approach named Fidelity Calculation for Description-to-Permissions (FCDP). It is aimed at assisting app-market auditors in assessing whether an app description indicates all information related to dangerous permissions using a quantified fidelity for providing a high-quality description to mobile users. Furthermore, we experimentally investigate the effect of different factors on FCDP, and we demonstrate that FCDP outperforms the state-of-the-art method by over 3.65% in predicting description-to-permissions. By using 64,265 Android descriptions crawled from Google Play, our in-depth analysis further indicates that most app descriptions do not entirely disclose the semantics of dangerous permissions for mobile users in the wild. It is therefore quite urgent to assist app-market auditors in regulating description writing in this regard.},
   journal={IEEE ACCESS},
   year={2020},
-  pdf={zhiqiang_fcdp.pdf}
+  html = {https://ieeexplore.ieee.org/document/9306843}
 }
 
 @inproceedings{icisca2020,
